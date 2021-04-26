@@ -1,0 +1,302 @@
+
+/*promotion information start*/
+.shipping_info{
+    position: relative;
+    color: #ffffff;
+    background-color: #e22d00;
+    cursor: pointer;
+    height: 100%;
+    margin: 0 auto ;
+}
+
+.shipping_info_text {
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.shipping_info a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.shipping_info a:link a:visited{
+    text-decoration: none;
+}
+.shipping_info a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.shipping_info_close {
+    display: inline-block;
+    cursor: pointer;
+    opacity: .6;
+    padding: 8px;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+    font-weight: 500;
+    transition: opacity .4s ease;
+}
+
+.shipping_info_close:hover {
+    opacity: 1;
+}
+/*promotion information ends*/
+
+/*account information start*/
+.login_bar{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#f5f5f5 ;
+    font-family: Meta-Medi,Arial,Helvetica,"sans-serif";
+    color: #616161;
+    font-size: .75rem;
+    line-height: .75rem;
+
+}
+
+.login_bar_l{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 40px;
+}
+.login_bar_l a{
+    font-weight: 400;
+    color: gray;
+    padding: 20px 15px;
+    border-right: 1px solid lightgray;
+    border-left:1px solid lightgray;
+}
+.login_bar_l a:hover{
+    text-decoration: none;
+    color: darkgrey;
+    border-bottom: #2c86aa solid 2px;
+}
+.login_bar_m{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 40px;
+}
+.login_bar_m a {
+    font-weight: 400;
+    color: gray;
+    padding: 20px 15px;
+}
+.login_bar_m a:hover{
+    text-decoration: none;
+    color: darkgrey;
+    border-bottom: #2c86aa solid 2px;
+}
+.login_bar_r{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    margin-right: 40px;
+}
+.login_bar_r div{
+    margin: auto 8px;
+}
+.login_bar_r a{
+    color: gray;
+    padding: 21px 5px;
+}
+
+.login_bar_r a:hover{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.login_bar_r span:hover{
+    cursor: pointer;
+    color: darkgrey;
+}
+
+.login_show{
+    background-color: #ffffff;
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    z-index: 4;
+    border: solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    list-style: none;
+    font-size: large;
+    padding: 10px 20px;
+    top: 43px;
+    left: 8px;
+    border-radius: 10px;
+}
+
+.login_hide{
+    display: none;
+}
+/*account information ends*/
+
+/*navbar information start*/
+.header{
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid lightslategray;
+    margin-bottom: 11px;
+}
+
+.header_logo{
+    width: 20%;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar_route{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_route a{
+    padding: 22px 10px;
+    color: black;
+}
+
+.navbar_route a:hover{
+    text-decoration: none;
+    color: darkgrey;
+    border-bottom: red solid 2px;
+}
+
+
+.navbar_search{
+    width: 20%;
+    align-items: center;
+    text-align: center;
+}
+
+
+.header .menu,
+.header .close{
+    cursor:pointer;
+    display: none;
+}
+
+input[type=text] {
+    height: 15px;
+    display:block;
+    margin: 0 10px 0 auto;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("../../img/search.png");
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 70%;
+}
+/*navbar information ends*/
+
+
+
+@media(max-width: 650px){
+    .header{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        z-index: 99;
+        opacity: 0.97;
+        transition: 0.5s linear;
+    }
+
+    .header .menu,
+    .header .close{
+        display: block;
+    }
+
+    .header .close{
+        position: absolute;
+        top:10px;
+        right:20px
+    }
+
+    .header ul.toggle{
+        top:0;
+    }
+}
+
+.show_cart_timeout span,
+.hide_cart_timeout span{
+    display: none;
+}
+
+.show_cart_timeout:hover span{
+    display: unset;
+}
+
+.cart_timeout_wrapper {
+    /*display: none;*/
+    flex-direction: column;
+    position: fixed;
+    right: 13px;
+    top: 108px;
+    width: auto;
+    z-index: 150;
+    min-height: 200px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    transition: all .2s ease-in-out .2s;
+    padding: 2rem;
+
+}
+
+/*.cart_timeout_wrapper:hover .cart_timeout_wrapper {*/
+/*    display: block*/
+/*}*/
+
+.single_cart{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 0.875rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.mini_cart_info{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.mini_car_image img{
+    width: 150px;
+}

@@ -74,13 +74,13 @@ class Payment extends Component {
                                     currency: 'USD'
                                 }],
                             shipping_address: {
-                                recipient_name: 'Mark Xu',
-                                line1: '50 Acadia Ave, Markham, ON L3R 0B3',
-                                line2: 'Unit #200',
-                                city: 'Toronto',
+                                recipient_name: 'testing',
+                                line1: 'testing',
+                                line2: 'testing',
+                                city: 'testing',
                                 country_code: 'CA',
                                 postal_code: 'L3R 0B3',
-                                phone: '6474017219',
+                                phone: 'testing',
                                 state: 'Ontario'
                             }
                         }
